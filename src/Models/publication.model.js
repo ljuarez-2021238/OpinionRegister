@@ -1,4 +1,5 @@
-const mongoose = require('mongoose');
+
+import mongoose from 'mongoose';
 
 const PublicacionSchema = new mongoose.Schema({
   titulo: {
@@ -35,4 +36,5 @@ const PublicacionSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('Publicacion', PublicacionSchema);
+
+export default mongoose.model('Publicacion', PublicacionSchema);
