@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 connectDB();
 
 app.get("/", (req, res) => {
-    res.json({ message: "Opinion Management System Running" });
+    res.json({ message: "Opinion Management System Running correctly!" });
 });
 
 app.use("/auth", authRoutes);
